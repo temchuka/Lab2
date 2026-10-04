@@ -1,0 +1,83 @@
+/* тема «План этажа»: чертежная сетка, таблички-указатели, желтый цвет навигации */
+body {
+    margin: 0;
+    padding: 32px 40px 40px 40px;
+    background-color: #f1f5f6;
+    /* чертежная сетка */
+    background-image:
+        linear-gradient(#dbe5e8 1px, transparent 1px),
+        linear-gradient(90deg, #dbe5e8 1px, transparent 1px);
+    background-size: 24px 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #143039;
+}
+
+h1 {
+    /* заголовок первого уровня - шрифт с засечками */
+    font-family: Georgia, "Times New Roman", serif;
+    /* ширина по тексту, чтобы желтая линия была только под заголовком */
+    display: table;
+    margin: 20px 0 14px 0;
+    padding-bottom: 6px;
+    border-bottom: 6px solid #f5b700;
+    font-size: 38px;
+}
+
+h2 {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+}
+
+h3 {
+    margin: 0 0 22px 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #4f6a73;
+}
+
+table {
+    border-collapse: collapse;
+    /* ширина таблицы на 100% экрана */
+    width: 100%;
+    border: 2px solid #143039;
+    background: #ffffff;
+}
+
+p, h4 {
+    font-size: 20px;
+    margin: 24px 0 8px 0;
+}
+
+h4 {
+    /* размер шрифта подзаголовков четвертого уровня изменен с 14px на 18px */
+    font-size: 18px;
+}
+
+ul, ol {
+    margin: 0;
+    line-height: 1.7;
+}
+
+table tr th {
+    padding: 10px 12px;
+    border: 2px solid #143039;
+    background: #f5b700;
+    font-size: 14px;
+    text-align: left;
+}
+
+table tr td {
+    padding: 9px 12px;
+    border: 1px solid #143039;
+}
+
+/* первый столбец - название торговой точки */
+table tr td:first-child {
+    font-weight: bold;
+}
+
+img {
+    /* картинка высотой 30px */
+    height: 30px;
+    width: auto;
+}
